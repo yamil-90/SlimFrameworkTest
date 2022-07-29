@@ -1,0 +1,15 @@
+{{> header.html}}
+
+<h1>Welcome to the homepage</h1>
+
+<div class="bikes">
+    {{#bikes}}
+    <div>
+        <div class="bike-icon">🚲</div>
+        <h2><a href="/details/{{id}}">{{name}}</a></h2>
+        <p>{{type}}</p>
+    </div>
+    {{/bikes}}
+</div>
+
+{{> footer.html}}
